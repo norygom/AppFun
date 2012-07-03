@@ -5,12 +5,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Listado de Clientes</title>
+<title>Conexion Exitosa</title>
 </head>
 
 <body>
-	<h1>Listado de los Clientes</h1>
+	<%
+	int id = Integer.valueOf(request.getParameter("id_colonia")).intValue(); 
+	String nombre = String.valueOf(request.getParameter("nombre"));
+	
+	out.println(id);
+	out.println(nombre);
+	%>
     
-    <p><a href="bienvenida_c.jsp">Regresar</a></p>
 </body>
 </html>
