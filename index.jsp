@@ -16,11 +16,6 @@ body {
 
 <body>
 Prueba
-<script type="text/javascript">
-<!--
-var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
-var CollapsiblePanel1 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel1");
-//-->
 </script>
 	<p><a href="cliente/bienvenida_c.jsp">Clientes</a></p>
     <p><a href="cobrador/bienvenida_co.jsp">Cobradores</a></p>
