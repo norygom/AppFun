@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="../js/script_se.js"></script>
 <title>Listado de Cobradores</title>
 </head>
 
@@ -60,6 +61,82 @@
 		out.println("El error es: " + e.getMessage());
 		}
 	%>
+    
+    <div>
+    	<a style="cursor:pointer" onClick="mostrar('capa1')"><p>Nueva Colonia</p></a>
+	</div>
+	
+    <div id="capa1" style="display:block;">
+        <form id="form1" name="form1" method="post" action="">
+            <table width="302" border="1">
+                <tr>
+                    <td width="138">Id</td>
+                    <td width="148"><label for="id_colonia"></label>
+                    <input type="text" name="id_colonia" id="id_colonia" /></td>
+                </tr>
+                <tr>
+                    <td>Nombre</td>
+                    <td><input type="text" name="nombre" id="nombre" /></td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+              </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td><input type="submit" name="guardar" id="guardar" value="Guardar" /></td>
+                  <td><input type="reset" name="cancelar" id="cancelar" value="Cancelar" /></td>
+                </tr>
+            </table>
+    </form>
+</div>
     
     <p><a href="bienvenida_co.jsp">Regresar</a></p>
 </body>

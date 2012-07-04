@@ -11,7 +11,6 @@
 <body>
 	<%
 	//Variables
-	int id = Integer.valueOf(request.getParameter("id_localidad")).intValue(); 
 	String nombre = String.valueOf(request.getParameter("nombre"));
 	
 	try {
@@ -20,7 +19,7 @@
 		
 		// Preparar consulta
 		Statement consulta = con.createStatement(); 
-		consulta.executeQuery("INSERT INTO localidad (id_localidad,nombre_loc) VALUES(" + id +",'"+ nombre +"')"); 
+		consulta.executeQuery("INSERT INTO localidad (nombre_loc) VALUES('"+ nombre +"')"); 
 		
 			consulta.close();
 			con.close();

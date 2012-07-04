@@ -68,11 +68,6 @@
         <form id="form1" name="form1" method="post" action="localidad_n.jsp">
             <table width="302" border="1">
                 <tr>
-                    <td width="138">Id</td>
-                    <td width="148"><label for="id_localidad"></label>
-                  <input type="text" name="id_localidad" id="id_localidad" /></td>
-                </tr>
-                <tr>
                     <td>Nombre</td>
                     <td><input type="text" name="nombre" id="nombre" /></td>
                 </tr>
@@ -84,6 +79,6 @@
     </form>
         </div>
     
-<p><a href="bienvenida_d.jsp">Detalle de Domicilio</a></p>
+<p><a href="bienvenida_d.jsp">Regresar</a></p>
 </body>
 </html>

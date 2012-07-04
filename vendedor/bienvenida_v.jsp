@@ -10,5 +10,6 @@
 	<h1>Datos de los Vendedores</h1>
     
     <p><a href="listado_v.jsp">Ver Vendedores</a></p>
+    <p><a href="../index.jsp">Principal</a></p>
 </body>
 </html>

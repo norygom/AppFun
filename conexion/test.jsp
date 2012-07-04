@@ -28,5 +28,7 @@
 		out.println("El error es: " + e.getMessage()); // Especifica el error "getMessage"
 		}
 	%>
+    
+    <p><a href="../index.jsp">Principal</a></p>
 </body>
 </html>

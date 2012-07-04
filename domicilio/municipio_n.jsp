@@ -10,8 +10,7 @@
 
 <body>
 	<%
-	//Variables
-	int id = Integer.valueOf(request.getParameter("id_municipio")).intValue(); 
+	//Variables 
 	String nombre = String.valueOf(request.getParameter("nombre"));
 	
 	try {
@@ -20,7 +19,7 @@
 		
 		// Preparar consulta
 		Statement consulta = con.createStatement(); 
-		consulta.executeQuery("INSERT INTO municipio (id_municipio,nombre_mun) VALUES(" + id +",'"+ nombre +"')"); 
+		consulta.executeQuery("INSERT INTO municipio (nombre_mun) VALUES('"+ nombre +"')"); 
 		
 			consulta.close();
 			con.close();

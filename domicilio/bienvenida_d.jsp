@@ -13,5 +13,6 @@
     <p><a href="list_estado.jsp">Ver Estados</a></p>
     <p><a href="list_localidad.jsp">Ver Localidades</a></p>
     <p><a href="list_municipio.jsp">Ver Municipios</a></p>
+    <p><a href="../index.jsp">Principal</a></p>
 </body>
 </html>

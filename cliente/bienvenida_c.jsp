@@ -10,5 +10,6 @@
 	<h1>Datos de los Clientes</h1>
     
     <p><a href="listado_c.jsp">Ver Clientes</a></p>
+    <p><a href="../index.jsp">Principal</a></p>
 </body>
 </html>

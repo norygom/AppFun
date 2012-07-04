@@ -10,5 +10,6 @@
 	<h1>Datos de los Cobradores</h1>
     
     <p><a href="listado_co.jsp">Ver Cobradores</a></p>
+    <p><a href="../index.jsp">Principal</a></p>
 </body>
 </html>

@@ -22,5 +22,10 @@ var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenu
 var CollapsiblePanel1 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel1");
 //-->
 </script>
+	<p><a href="cliente/bienvenida_c.jsp">Clientes</a></p>
+    <p><a href="cobrador/bienvenida_co.jsp">Cobradores</a></p>
+    <p><a href="domicilio/bienvenida_d.jsp">Domicilios</a></p>
+    <p><a href="vendedor/bienvenida_v.jsp">Vendedores</a></p>
+    <p><a href="conexion/test.jsp">Test BD</a></p>
 </body>
 </html>
