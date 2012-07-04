@@ -11,7 +11,7 @@
 <body>
 	<%
 	//Variables
-	int id = Integer.valueOf(request.getParameter("id_colonia")).intValue(); 
+	int id = Integer.valueOf(request.getParameter("id_localidad")).intValue(); 
 	String nombre = String.valueOf(request.getParameter("nombre"));
 	
 	try {
@@ -20,7 +20,7 @@
 		
 		// Preparar consulta
 		Statement consulta = con.createStatement(); 
-		consulta.executeQuery("INSERT INTO colonia (id_colonia,nombre_col) VALUES(" + id +",'"+ nombre +"')"); 
+		consulta.executeQuery("INSERT INTO localidad (id_localidad,nombre_loc) VALUES(" + id +",'"+ nombre +"')"); 
 		
 			consulta.close();
 			con.close();
@@ -33,6 +33,6 @@
 		out.println("El error es: " + e.getMessage());
 		}
 	%>
-    <p><a href="list_colonia.jsp">Regresar</a></p>
+    <p><a href="list_localidad.jsp">Regresar</a></p>
 </body>
 </html>

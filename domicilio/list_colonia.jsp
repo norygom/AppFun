@@ -40,7 +40,7 @@
 			%>
                   <tr class="estilocelda">
                     <td><%=rs.getString("id_colonia")%></td>
-                    <td><%=rs.getString("nombre")%></td>
+                    <td><%=rs.getString("nombre_col")%></td>
                   </tr>
 			<%
 					siguiente = rs.next(); // Busca el proximo registro 

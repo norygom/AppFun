@@ -18,7 +18,7 @@
 		
 		// Preparar consulta
 		Statement consulta = con.createStatement(); 
-		ResultSet rs = consulta.executeQuery("SELECT c.comision AS cobrador, p.nombre AS persona, co.nombre AS colonia FROM cobrador c INNER JOIN persona p ON c.id_persona = p.id_persona INNER JOIN detalle_domicilio dc ON p.id_detalle_dom = dc.id_detalle_dom INNER JOIN colonia co ON dc.id_colonia = co.id_colonia"); 
+		ResultSet rs = consulta.executeQuery("SELECT * FROM cobrador c INNER JOIN persona p ON c.id_persona = p.id_persona INNER JOIN detalle_domicilio dc ON p.id_detalle_dom = dc.id_detalle_dom INNER JOIN colonia co ON dc.id_colonia = co.id_colonia"); 
 		boolean siguiente = rs.next(); 
 		
 		if(!siguiente){
@@ -39,9 +39,9 @@
 					{
 			%>
                   <tr class="estilocelda">
-                    <td><%=rs.getString("c.comision")%></td>
-                    <td><%=rs.getString("p.nombre")%></td>
+                    <td><%=rs.getString("comision")%></td>
                     <td><%=rs.getString("nombre")%></td>
+                    <td><%=rs.getString("nombre_col")%></td>
                   </tr>
 			<%
 					siguiente = rs.next(); // Busca el proximo registro 

@@ -40,7 +40,7 @@
 			%>
                   <tr class="estilocelda">
                     <td><%=rs.getString("id_municipio")%></td>
-                    <td><%=rs.getString("nombre")%></td>
+                    <td><%=rs.getString("nombre_mun")%></td>
                   </tr>
 			<%
 					siguiente = rs.next(); // Busca el proximo registro 
@@ -65,7 +65,7 @@
 	</div>
 	
     <div id="capa1" style="display:none;">
-        <form id="form1" name="form1" method="post" action="colonia_n.jsp">
+        <form id="form1" name="form1" method="post" action="municipio_n.jsp">
             <table width="302" border="1">
                 <tr>
                     <td width="138">Id</td>
