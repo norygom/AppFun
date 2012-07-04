@@ -70,64 +70,70 @@
         <form id="form1" name="form1" method="post" action="">
             <table width="302" border="1">
                 <tr>
-                    <td width="138">Id</td>
-                    <td width="148"><label for="id_colonia"></label>
-                    <input type="text" name="id_colonia" id="id_colonia" /></td>
+                    <td width="138">Nombre</td>
+                    <td width="148"><label for="nombre"></label>
+                    <input type="text" name="nombre" id="nombre" />                      <label for="id_colonia"></label></td>
                 </tr>
                 <tr>
-                    <td>Nombre</td>
-                    <td><input type="text" name="nombre" id="nombre" /></td>
+                    <td>Apellido Paterno</td>
+                    <td><label for="ap_materno"></label>
+                    <input type="text" name="ap_materno" id="ap_materno" /></td>
                 </tr>
                 <tr>
-                  <td>&nbsp;</td>
-                  <td>&nbsp;</td>
+                  <td>Apellido Materno</td>
+                  <td><label for="ap_paterno"></label>
+                  <input type="text" name="ap_paterno" id="ap_paterno" /></td>
               </tr>
                 <tr>
-                  <td>&nbsp;</td>
+                  <td>Estado Civil</td>
+                  <td><label for="edo_civil"></label>
+                  <input type="text" name="edo_civil" id="edo_civil" /></td>
+                </tr>
+                <tr>
+                  <td>Telefono Casa</td>
+                  <td><label for="tel_casa"></label>
+                  <input type="text" name="tel_casa" id="tel_casa" /></td>
+                </tr>
+                <tr>
+                  <td>Telefono Movil</td>
+                  <td><label for="tel_movil"></label>
+                  <input type="text" name="tel_movil" id="tel_movil" /></td>
+                </tr>
+                <tr>
+                  <td>Codigo Postal</td>
+                  <td><label for="cod_postal"></label>
+                  <input type="text" name="cod_postal" id="cod_postal" /></td>
+                </tr>
+                <tr>
+                  <td>Domicilio</td>
                   <td>&nbsp;</td>
                 </tr>
                 <tr>
-                  <td>&nbsp;</td>
-                  <td>&nbsp;</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
+                  <td>Entre calles</td>
                   <td>&nbsp;</td>
                 </tr>
                 <tr>
-                  <td>&nbsp;</td>
-                  <td>&nbsp;</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
+                  <td>Observaciones</td>
                   <td>&nbsp;</td>
                 </tr>
                 <tr>
-                  <td>&nbsp;</td>
-                  <td>&nbsp;</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
+                  <td>Comision</td>
                   <td>&nbsp;</td>
                 </tr>
                 <tr>
-                  <td>&nbsp;</td>
-                  <td>&nbsp;</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
+                  <td>Estado</td>
                   <td>&nbsp;</td>
                 </tr>
                 <tr>
-                  <td>&nbsp;</td>
-                  <td>&nbsp;</td>
-                </tr>
-                <tr>
-                  <td>&nbsp;</td>
+                  <td>Municipio</td>
                   <td>&nbsp;</td>
                 </tr>
                 <tr>
+                  <td>Localidad</td>
                   <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Colonia</td>
                   <td>&nbsp;</td>
                 </tr>
                 <tr>
