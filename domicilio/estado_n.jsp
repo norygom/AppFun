@@ -13,17 +13,21 @@
 	//Variables
 	String nombre = String.valueOf(request.getParameter("nombre"));
 	
-	try {
+	Connection con;
 		Class.forName(driver);
-		Connection con = DriverManager.getConnection(URL,usuario,contra);
+		con = DriverManager.getConnection(URL,usuario,contra);
+		Statement insertando; //Variable para ejecutar la consulta SQL
+		insertando = con.createStatement();
 		
-		// Preparar consulta
-		Statement consulta = con.createStatement(); 
-		consulta.executeQuery("INSERT INTO estado (nombre_est) VALUES('"+ nombre +"')"); 
+		try{
+
+		insertando.executeUpdate("INSERT INTO estado (nombre_est) VALUES('"+ nombre +"')"); 
 		
-			consulta.close();
+			insertando.close();
+	%>
+    	<p>¡Se registro correctamente!</p>
+    <%		
 			con.close();
-			
 		}
 	catch(Exception e){
 		%>

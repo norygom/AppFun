@@ -120,7 +120,7 @@
                     <select name="estado" id="estado">
 			<%
 			Statement consulta1 = con.createStatement(); 
-			ResultSet rs1 = consulta.executeQuery("SELECT nombre_est FROM estado ORDER BY nombre_est");
+			ResultSet rs1 = consulta.executeQuery("SELECT DISTINCT nombre_est FROM estado ORDER BY nombre_est");
                 while(rs1.next())
                 {
                 %>
@@ -136,7 +136,7 @@
                     <select name="municipio" id="municipio">
             <%
 			Statement consulta2 = con.createStatement(); 
-			ResultSet rs2 = consulta.executeQuery("SELECT nombre_mun FROM municipio ORDER BY nombre_mun");
+			ResultSet rs2 = consulta.executeQuery("SELECT DISTINCT nombre_mun FROM municipio ORDER BY nombre_mun");
                 while(rs2.next())
                 {
                 %>
@@ -152,7 +152,7 @@
                     <select name="localidad" id="localidad">
              <%
 			Statement consulta3 = con.createStatement(); 
-			ResultSet rs3 = consulta.executeQuery("SELECT nombre_loc FROM localidad ORDER BY nombre_loc");
+			ResultSet rs3 = consulta.executeQuery("SELECT DISTINCT nombre_loc FROM localidad ORDER BY nombre_loc");
                 while(rs3.next())
                 {
                 %>
@@ -168,7 +168,7 @@
                     <select name="colonia" id="colonia">
              <%
 			Statement consulta4 = con.createStatement(); 
-			ResultSet rs4 = consulta.executeQuery("SELECT nombre_col FROM colonia ORDER BY nombre_col");
+			ResultSet rs4 = consulta.executeQuery("SELECT DISTINCT nombre_col FROM colonia ORDER BY nombre_col");
                 while(rs4.next())
                 {
                 %>

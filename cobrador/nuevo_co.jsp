@@ -15,14 +15,25 @@
 	String ap_pat = String.valueOf(request.getParameter("ap_paterno"));
 	String ap_mat = String.valueOf(request.getParameter("ap_materno"));
 	String ed_civ = String.valueOf(request.getParameter("edo_civil"));
-	int tel_ca = Integer.valueOf(request.getParameter("tel_casa")).intValue();	
+	int tel_ca = Integer.valueOf(request.getParameter("tel_casa")).intValue();
+	int tel_mo = Integer.valueOf(request.getParameter("tel_movil")).intValue();
+	int cod_po = Integer.valueOf(request.getParameter("cod_postal")).intValue();
+	String domici = String.valueOf(request.getParameter("domicilio"));
+	String ent_ca = String.valueOf(request.getParameter("entre"));
+	String observ = String.valueOf(request.getParameter("observaciones"));
+	int comisi = Integer.valueOf(request.getParameter("comision")).intValue();
+	String estado = String.valueOf(request.getParameter("estado"));
+	String munici = String.valueOf(request.getParameter("municipio"));
+	String locali = String.valueOf(request.getParameter("localidad"));
+	String coloni = String.valueOf(request.getParameter("colonia"));
+			
 	try {
 		Class.forName(driver);
 		Connection con = DriverManager.getConnection(URL,usuario,contra);
 		
 		// Preparar consulta
 		Statement consulta = con.createStatement(); 
-		consulta.executeQuery("INSERT INTO colonia (nombre_col) VALUES('"+ nombre +"')"); 
+		consulta.executeQuery("INSERT INTO persona; 
 		
 			consulta.close();
 			con.close();

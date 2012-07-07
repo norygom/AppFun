@@ -11,21 +11,25 @@
 <body>
 	<%
 	//Variables 
-	String nombre = String.valueOf(request.getParameter("nombre"));
+	String nombre = request.getParameter("nombre");
 	
-	try {
+		Connection con;
 		Class.forName(driver);
-		Connection con = DriverManager.getConnection(URL,usuario,contra);
+		con = DriverManager.getConnection(URL,usuario,contra);
+		Statement insertando; //Variable para ejecutar la consulta SQL
+		insertando = con.createStatement();
 		
-		// Preparar consulta
-		Statement consulta = con.createStatement(); 
-		consulta.executeQuery("INSERT INTO colonia (nombre_col) VALUES('"+ nombre +"')"); 
+		try{
+
+		insertando.executeUpdate("INSERT INTO colonia (nombre_col) VALUES('"+ nombre +"')"); 
 		
-			consulta.close();
-			con.close();
-			
+			insertando.close();
+	%>
+    	<p>¡Se registro correctamente!</p>
+    <%		
+		con.close();		
 		}
-	catch(Exception e){
+			catch(SQLException e){
 		%>
 		Ocurrio un error al conectarse
 	<%
