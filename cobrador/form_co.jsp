@@ -70,7 +70,7 @@
                 <tr>
                   <td>Comision</td>
                   <td><label for="comision"></label>
-                  <input name="comision" type="text" id="comision" maxlength="4" /></td>
+                  <input name="comision" type="text" id="comision" maxlength="5" /></td>
                 </tr>
                 <tr>
                   <td>Estado</td>
