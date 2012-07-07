@@ -33,7 +33,7 @@
 		
 		// Preparar consulta
 		Statement consulta = con.createStatement(); 
-		consulta.executeQuery("INSERT INTO persona; 
+		consulta.executeQuery("INSERT INTO persona"); 
 		
 			consulta.close();
 			con.close();

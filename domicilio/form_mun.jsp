@@ -25,6 +25,7 @@ function MM_validateForm() { //v4.0
 </head>
 
 <body>
+	<h2>Nuevo Municipio</h2>
         <form action="municipio_n.jsp" method="post" name="form1" id="form1" onsubmit="MM_validateForm('nombre','','R');return document.MM_returnValue">
             <table width="302" border="1">
                 <tr>

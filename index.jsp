@@ -28,8 +28,8 @@ body {
   </li>
   <li><a href="cobrador/bienvenida_co.jsp" class="MenuBarItemSubmenu">Cobradores</a>
     <ul>
-      <li><a href="cobrador/nuevo_co.jsp">Nuevo cobrador</a></li>
-      <li><a href="cliente/listado_c.jsp">Ver cobradores</a></li>
+      <li><a href="cobrador/form_co.jsp">Nuevo cobrador</a></li>
+      <li><a href="cobrador/listado_co.jsp">Ver cobradores</a></li>
     </ul>
   </li>
   <li><a href="domicilio/bienvenida_d.jsp">Domicilios</a>
@@ -59,6 +59,7 @@ body {
     </ul>
   </li>
   <li><a href="conexion/test.jsp">Test BD</a></li>
+  <li><a href="sitemap.html">Mapa del Sitio</a></li>
 </ul>
 <p><img src="imagenes/logofun.jpg" width="273" height="181" alt="logofun" />
   </script>

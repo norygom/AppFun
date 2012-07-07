@@ -3,13 +3,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Cobradores</title>
+<title>Detalle Domicilios</title>
 </head>
 
 <body>
-	<h1>Datos de los Cobradores</h1>
-    
-    <p><a href="listado_co.jsp">Ver Cobradores</a></p>
-    <p><a href="../index.jsp">Inicio</a></p>
+	<h1>Detalles de los Domicilios</h1> 
+	<p><a href="list_colonia.jsp">Ver Colonias</a></p>
+	<p><a href="list_estado.jsp">Ver Estados</a></p>
+	<p><a href="list_localidad.jsp">Ver Localidades</a></p>
+	<p><a href="list_municipio.jsp">Ver Municipios</a></p>
+	<p><a href="../index.jsp">Inicio</a></p>
 </body>
 </html>
