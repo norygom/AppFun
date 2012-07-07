@@ -36,10 +36,10 @@ body {
     <ul>
       <li><a class="MenuBarItemSubmenu" href="#">Nuevo</a>
         <ul>
-          <li><a href="domicilio/estado_n.jsp">Estado</a></li>
-          <li><a href="domicilio/municipio_n.jsp">Municipio</a></li>
-          <li><a href="domicilio/localidad_n.jsp">Localidad/Poblado</a></li>
-          <li><a href="domicilio/colonia_n.jsp">Colonia</a></li>
+          <li><a href="domicilio/form_est.jsp">Estado</a></li>
+          <li><a href="domicilio/form_mun.jsp">Municipio</a></li>
+          <li><a href="domicilio/form_loc.jsp">Localidad/Poblado</a></li>
+          <li><a href="domicilio/form_col.jsp">Colonia</a></li>
         </ul>
       </li>
       <li><a href="#" class="MenuBarItemSubmenu">Ver</a>

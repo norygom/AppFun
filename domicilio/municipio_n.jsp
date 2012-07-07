@@ -37,6 +37,8 @@
 		out.println("El error es: " + e.getMessage());
 		}
 	%>
-    <p><a href="list_municipio.jsp">Regresar</a></p>
+    <p><a href="list_municipio.jsp">Ver Municipios</a></p>
+    <p><a href="form_mun.jsp">Nuevo Municipio</a></p>
+    <p><a href="../index.jsp">Inicio</a></p>
 </body>
 </html>

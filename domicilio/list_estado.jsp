@@ -5,7 +5,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<script type="text/javascript" src="../js/script_se.js"></script>
 <title>Estados</title>
 </head>
 
@@ -59,27 +58,7 @@
 		out.println("El error es: " + e.getMessage());
 		}
 	%>
-    
-    <div>
-    	<a style="cursor:pointer" onClick="mostrar('capa1')"><p>Nuevo Estado</p></a>
-	</div>
-	
-    <div id="capa1" style="display:none;">
-        <form id="form1" name="form1" method="post" action="estado_n.jsp">
-            <table width="302" border="1">
-                <tr>
-                    <td>Nombre</td>
-                    <td><input type="text" name="nombre" id="nombre" /></td>
-                </tr>
-                <tr>
-                  <td><input type="submit" name="guardar" id="guardar" value="Guardar" /></td>
-                  <td><input type="reset" name="cancelar" id="cancelar" value="Cancelar" /></td>
-              </tr>
-            </table>
-    </form>
-        </div>
-
-    
-    <p><a href="bienvenida_d.jsp">Regresar</a></p>
+    <p><a href="form_est.jsp">Nuevo Estado</a></p>
+    <p><a href="../index.jsp">Inicio</a></p>
 </body>
 </html>

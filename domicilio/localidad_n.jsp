@@ -36,6 +36,8 @@
 		out.println("El error es: " + e.getMessage());
 		}
 	%>
-    <p><a href="list_localidad.jsp">Regresar</a></p>
+    <p><a href="list_localidad.jsp">Ver Localidades</a></p>
+    <p><a href="form_loc.jsp">Nueva Localidad</a></p>
+    <p><a href="../index.jsp">Inicio</a></p>
 </body>
 </html>

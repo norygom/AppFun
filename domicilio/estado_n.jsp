@@ -36,6 +36,8 @@
 		out.println("El error es: " + e.getMessage());
 		}
 	%>
-    <p><a href="list_estado.jsp">Regresar</a></p>
+    <p><a href="list_estado.jsp">Ver Estados</a></p>
+    <p><a href="form_est.jsp">Nuevo Estado</a></p>
+    <p><a href="../index.jsp">Inicio</a></p>
 </body>
 </html>
