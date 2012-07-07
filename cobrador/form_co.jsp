@@ -20,22 +20,22 @@
                 <tr>
                     <td width="138">Nombre</td>
                     <td width="148"><label for="nombre"></label>
-                    <input type="text" name="nombre" id="nombre" /></td>
+                    <input name="nombre" type="text" id="nombre" maxlength="20" /></td>
                 </tr>
                 <tr>
                     <td>Apellido Paterno</td>
                     <td><label for="ap_materno"></label>
-                  <input type="text" name="ap_paterno" id="ap_paterno" /></td>
+                  <input name="ap_paterno" type="text" id="ap_paterno" maxlength="15" /></td>
                 </tr>
                 <tr>
                   <td>Apellido Materno</td>
                   <td><label for="ap_materno"></label>
-                  <input type="text" name="ap_materno" id="ap_materno" /></td>
+                  <input name="ap_materno" type="text" id="ap_materno" maxlength="15" /></td>
               </tr>
                 <tr>
                   <td>Estado Civil</td>
                   <td><label for="edo_civil"></label>
-                  <input type="text" name="edo_civil" id="edo_civil" /></td>
+                  <input name="edo_civil" type="text" id="edo_civil" maxlength="10" /></td>
                 </tr>
                 <tr>
                   <td>Telefono Casa</td>
@@ -45,32 +45,32 @@
                 <tr>
                   <td>Telefono Movil</td>
                   <td><label for="tel_movil"></label>
-                  <input type="text" name="tel_movil" id="tel_movil" /></td>
+                  <input name="tel_movil" type="text" id="tel_movil" maxlength="10" /></td>
                 </tr>
                 <tr>
                   <td>Codigo Postal</td>
                   <td><label for="cod_postal"></label>
-                  <input type="text" name="cod_postal" id="cod_postal" /></td>
+                  <input name="cod_postal" type="text" id="cod_postal" maxlength="5" /></td>
                 </tr>
                 <tr>
                   <td>Domicilio</td>
                   <td><label for="domicilio"></label>
-                  <input type="text" name="domicilio" id="domicilio" /></td>
+                  <input name="domicilio" type="text" id="domicilio" maxlength="30" /></td>
                 </tr>
                 <tr>
                   <td>Entre calles</td>
                   <td><label for="entre"></label>
-                  <input type="text" name="entre" id="entre" /></td>
+                  <input name="entre" type="text" id="entre" maxlength="30" /></td>
                 </tr>
                 <tr>
                   <td>Observaciones</td>
                   <td><label for="observaciones"></label>
-                  <input type="text" name="observaciones" id="observaciones" /></td>
+                  <textarea name="observaciones" id="observaciones"></textarea></td>
                 </tr>
                 <tr>
                   <td>Comision</td>
                   <td><label for="comision"></label>
-                  <input type="text" name="comision" id="comision" /></td>
+                  <input name="comision" type="text" id="comision" maxlength="4" /></td>
                 </tr>
                 <tr>
                   <td>Estado</td>
