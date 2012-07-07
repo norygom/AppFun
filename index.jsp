@@ -7,20 +7,40 @@
 <style type="text/css">
 <!--
 body {
-	background-image: url();
+	background-image: url(imagenes/fondo.png);
 	text-align: center;
 }
 -->
 </style>
-</head>
+<link rel="stylesheet" href="css/estilos.css"/>
+</head> 
 
 <body>
-Prueba
-</script>
-	<p><a href="cliente/bienvenida_c.jsp">Clientes</a></p>
-    <p><a href="cobrador/bienvenida_co.jsp">Cobradores</a></p>
-    <p><a href="domicilio/bienvenida_d.jsp">Domicilios</a></p>
-    <p><a href="vendedor/bienvenida_v.jsp">Vendedores</a></p>
-    <p><a href="conexion/test.jsp">Test BD</a></p>
+<h1>&quot;Funerales Juan Pablo&quot;</h1>
+<table width="200" border="1">
+  <tr>
+    <th scope="row"><a href="cliente/bienvenida_c.jsp">Clientes</a></th>
+  </tr>
+  <tr>
+    <th scope="row"><a href="cobrador/bienvenida_co.jsp">Cobradores</a></th>
+  </tr>
+  <tr>
+    <th scope="row"><a href="domicilio/bienvenida_d.jsp">Domicilios</a></th>
+  </tr>
+  <tr>
+    <th scope="row"><a href="vendedor/bienvenida_v.jsp">Vendedores</a></th>
+  </tr>
+  <tr>
+    <th scope="row"><a href="conexion/test.jsp">Test BD</a></th>
+  </tr>
+</table>
+<p><img src="imagenes/logofun.jpg" width="273" height="181" alt="logofun" />
+  </script>
+</p>
+<p><a href="cliente/bienvenida_c.jsp"></a></p>
+    <p><a href="cobrador/bienvenida_co.jsp"></a></p>
+    <p><a href="domicilio/bienvenida_d.jsp"></a></p>
+    <p><a href="vendedor/bienvenida_v.jsp"></a></p>
+    <p><a href="conexion/test.jsp"></a></p>
 </body>
 </html>
