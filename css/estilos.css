@@ -6,3 +6,7 @@ h1 {
 	color:#000;
 	font-size:22px;
 }
+body {
+	background-image: url(../imagenes/fondo.png);
+	text-align: center;
+}
