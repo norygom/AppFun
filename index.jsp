@@ -13,27 +13,53 @@ body {
 -->
 </style>
 <link rel="stylesheet" href="css/estilos.css"/>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
 </head> 
 
 <body>
 <h1>&quot;Funerales Juan Pablo&quot;</h1>
-<table width="200" border="1">
-  <tr>
-    <th scope="row"><a href="cliente/bienvenida_c.jsp">Clientes</a></th>
-  </tr>
-  <tr>
-    <th scope="row"><a href="cobrador/bienvenida_co.jsp">Cobradores</a></th>
-  </tr>
-  <tr>
-    <th scope="row"><a href="domicilio/bienvenida_d.jsp">Domicilios</a></th>
-  </tr>
-  <tr>
-    <th scope="row"><a href="vendedor/bienvenida_v.jsp">Vendedores</a></th>
-  </tr>
-  <tr>
-    <th scope="row"><a href="conexion/test.jsp">Test BD</a></th>
-  </tr>
-</table>
+<ul id="MenuBar1" class="MenuBarVertical">
+  <li><a href="cliente/bienvenida_c.jsp">Clientes</a>
+    <ul>
+      <li><a href="cliente/bienvenida_c.jsp">Nuevo Cliente</a></li>
+      <li><a href="cliente/listado_c.jsp">Ver clientes</a></li>
+    </ul>
+  </li>
+  <li><a href="cobrador/bienvenida_co.jsp" class="MenuBarItemSubmenu">Cobradores</a>
+    <ul>
+      <li><a href="cobrador/nuevo_co.jsp">Nuevo cobrador</a></li>
+      <li><a href="cliente/listado_c.jsp">Ver cobradores</a></li>
+    </ul>
+  </li>
+  <li><a href="domicilio/bienvenida_d.jsp">Domicilios</a>
+    <ul>
+      <li><a class="MenuBarItemSubmenu" href="#">Nuevo</a>
+        <ul>
+          <li><a href="domicilio/estado_n.jsp">Estado</a></li>
+          <li><a href="domicilio/municipio_n.jsp">Municipio</a></li>
+          <li><a href="domicilio/localidad_n.jsp">Localidad/Poblado</a></li>
+          <li><a href="domicilio/colonia_n.jsp">Colonia</a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="MenuBarItemSubmenu">Ver</a>
+        <ul>
+          <li><a href="domicilio/list_estado.jsp">Estados</a></li>
+          <li><a href="domicilio/list_municipio.jsp">Municipios</a></li>
+          <li><a href="domicilio/list_localidad.jsp">Localidades/Pueblos</a></li>
+          <li><a href="domicilio/list_localidad.jsp">Colonias</a></li>
+        </ul>
+      </li>
+</ul>
+  </li>
+  <li><a href="vendedor/bienvenida_v.jsp" class="MenuBarItemSubmenu">Vendedores</a>
+    <ul>
+      <li><a href="vendedor/bienvenida_v.jsp">Nuevo vemdedor</a></li>
+      <li><a href="vendedor/listado_v.jsp">Ver vendedores</a></li>
+    </ul>
+  </li>
+  <li><a href="conexion/test.jsp">Test BD</a></li>
+</ul>
 <p><img src="imagenes/logofun.jpg" width="273" height="181" alt="logofun" />
   </script>
 </p>
@@ -41,6 +67,11 @@ body {
     <p><a href="cobrador/bienvenida_co.jsp"></a></p>
     <p><a href="domicilio/bienvenida_d.jsp"></a></p>
     <p><a href="vendedor/bienvenida_v.jsp"></a></p>
-    <p><a href="conexion/test.jsp"></a></p>
+<p><a href="conexion/test.jsp"></a></p>
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+//-->
+    </script>
 </body>
 </html>
