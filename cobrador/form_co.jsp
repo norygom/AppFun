@@ -63,85 +63,91 @@
                   <input name="entre" type="text" id="entre" maxlength="30" /></td>
                 </tr>
                 <tr>
-                  <td>Observaciones</td>
-                  <td><label for="observaciones"></label>
-                  <textarea name="observaciones" id="observaciones"></textarea></td>
-                </tr>
-                <tr>
                   <td>Comision</td>
-                  <td><label for="comision"></label>
-                  <input name="comision" type="text" id="comision" maxlength="5" /></td>
+                  <td><label for="observaciones">
+                    <input name="comision" type="text" id="comision" maxlength="5" />
+                  </label></td>
                 </tr>
                 <tr>
                   <td>Estado</td>
-                  <td><label for="estado"></label>
+                  <td><label for="comision">
                     <select name="estado" id="estado">
-			<%
+                      <%
 			Statement consulta1 = con.createStatement(); 
 			ResultSet rs1 = consulta1.executeQuery("SELECT DISTINCT nombre_est FROM estado ORDER BY nombre_est");
                 while(rs1.next())
                 {
                 %>
-                    <option><%=rs1.getString("nombre_est")%></option>                    
-                <%                   
+                      <option><%=rs1.getString("nombre_est")%></option>
+                      <%                   
                 }                                               
-            %>	
-                  </select></td>
+            %>
+                    </select>
+                  </label></td>
                 </tr>
                 <tr>
                   <td>Municipio</td>
-                  <td><label for="municipio"></label>
+                  <td><label for="estado">
                     <select name="municipio" id="municipio">
-            <%
+                      <%
 			Statement consulta2 = con.createStatement(); 
 			ResultSet rs2 = consulta2.executeQuery("SELECT DISTINCT nombre_mun FROM municipio ORDER BY nombre_mun");
                 while(rs2.next())
                 {
                 %>
-                    <option><%=rs2.getString("nombre_mun")%></option>                    
-                <%                   
+                      <option><%=rs2.getString("nombre_mun")%></option>
+                      <%                   
                 }                                               
-            %>	
-                  </select></td>
+            %>
+                    </select>
+                  </label></td>
                 </tr>
                 <tr>
                   <td>Localidad</td>
-                  <td><label for="localidad"></label>
+                  <td><label for="municipio">
                     <select name="localidad" id="localidad">
-             <%
+                      <%
 			Statement consulta3 = con.createStatement(); 
 			ResultSet rs3 = consulta3.executeQuery("SELECT DISTINCT nombre_loc FROM localidad ORDER BY nombre_loc");
                 while(rs3.next())
                 {
                 %>
-                    <option><%=rs3.getString("nombre_loc")%></option>                    
-                <%                   
+                      <option><%=rs3.getString("nombre_loc")%></option>
+                      <%                   
                 }                                               
-            %>	
-                  </select></td>
+            %>
+                    </select>
+                  </label></td>
                 </tr>
                 <tr>
                   <td>Colonia</td>
-                  <td><label for="colonia"></label>
+                  <td><label for="localidad">
                     <select name="colonia" id="colonia">
-             <%
+                      <%
 			Statement consulta4 = con.createStatement(); 
 			ResultSet rs4 = consulta4.executeQuery("SELECT DISTINCT nombre_col FROM colonia ORDER BY nombre_col");
                 while(rs4.next())
                 {
                 %>
-                    <option><%=rs4.getString("nombre_col")%></option>                    
-                <%                   
+                      <option><%=rs4.getString("nombre_col")%></option>
+                      <%                   
                 }                                               
-            %>	
-                  </select></td>
+            %>
+                    </select>
+                  </label></td>
+                </tr>
+                <tr>
+                  <td>Observaciones</td>
+                  <td><label for="colonia">
+                    <textarea name="observaciones" id="observaciones"></textarea>
+                  </label></td>
                 </tr>
                 <tr>
                   <td><input type="submit" name="guardar" id="guardar" value="Guardar" /></td>
                   <td><input type="reset" name="cancelar" id="cancelar" value="Cancelar" /></td>
                 </tr>
             </table>
-    </form>
+</form>
 	<%
 			consulta1.close();
 			consulta2.close();

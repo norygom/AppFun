@@ -30,13 +30,8 @@
   </li>
   <li><a href="cobrador/bienvenida_co.jsp" class="MenuBarItemSubmenu">Cobradores</a>
     <ul>
-<<<<<<< HEAD
-      <li><a href="cobrador/form_co.jsp">Nuevo cobrador</a></li>
-      <li><a href="cobrador/listado_co.jsp">Ver cobradores</a></li>
-=======
-      <li id="sprytrigger3"><a href="cobrador/nuevo_co.jsp">Nuevo cobrador</a></li>
-      <li id="sprytrigger4"><a href="cliente/listado_c.jsp">Ver cobradores</a></li>
->>>>>>> Escritorio
+      <li id="sprytrigger3"><a href="cobrador/form_co.jsp">Nuevo cobrador</a></li>
+      <li id="sprytrigger4"><a href="cobrador/listado_co.jsp">Ver cobradores</a></li>
     </ul>
   </li>
   <li><a href="domicilio/bienvenida_d.jsp">Domicilios</a>

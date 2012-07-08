@@ -3,6 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="../css/estilos.css"/>
 <title>Registro</title>
 <script type="text/javascript">
 function MM_validateForm() { //v4.0
